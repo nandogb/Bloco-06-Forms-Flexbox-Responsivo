@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dia 01 Forms</title>
+  </head>
+  <body>
+    <h1>Formulário</h1>
+    <form action="" method="GET">
+        <label for="input-text">Digite seu Nome</label>
+      <input type="text" placeholder="input text" required name="texto" id="input-text" />
+      <br>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <form action="" method="GET">
+        <input type="checkbox" value="pizza" name="comida" >pizza
+        <input type="checkbox" value="sushi" name="comida" >sushi
+        <input type="checkbox" value="burg" name="comida" >hamburger
+        <br>
+        <input type="radio" name="pagamento" id="metodo1">Pix
+        <input type="radio" name="pagamento" id="metodo2">Crédito
+        <input type="radio" name="pagamento" id="metodo3">Débito
+        <select name="entrega" id="dropdown">
+            <option value="dom">Delivery</option>
+            <option value="busca">Retirada</option>
+        </select><br>
+        <form action="" method="GET" enctype="multipart/form-data">
+            <input type="password" name="senha" id="">
+            <br><br>
+            <input type="file">
+        </form>
+    </form>
+
+  </body>
+</html>
