@@ -5,46 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concurso TrybeTrip</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize-v1.0.0/materialize/css/materialize.min.css"  media="screen,projection"/>
 </head>
 <body>
 <header>
     <h1>Sorteio!</h1>
-    <form action="" method="get">
-        <label for="nome-completo">Nome Completo:
+    <form action="#" method="get">
+        <p>Nome Completo:</p>
+        <label for="nome-completo">
             <input type="text" placeholder="digite seu nome completo" required name="nome" id="nome-completo" minlength="10" maxlength="40"><br>
         </label><br>
-        <label for="email">E-mail:
+        <p>E-mail:</p>
+        <label for="email">
             <input type="text" placeholder="digite sem email" required name="nome" id="email" minlength="10"  maxlength="50">
         </label><br><br>
         <p>Escolha qual destino deseja concorrer!</p>
         <label for="ny">
-            <input type="radio" name="destino" id="ny"> Nova York
+            <input type="radio"  class="with-gap"  name="destino" id="ny"> <span>Nova York</span>
         </label>
         <label for="rj">
-            <input type="radio" name="destino" id="rj"> Rio de Janeiro
+            <input type="radio" class="with-gap" name="destino" id="rj"> <span>Rio de Janeiro</span> 
         </label>
         <label for="bl">
-            <input type="radio" name="destino" id="bl"> Belém
+            <input type="radio" class="with-gap" name="destino" id="bl"> <span>Belém</span>
         </label>
         <label for="fg">
-            <input type="radio" name="destino" id="fg">Fenghuang
+            <input type="radio" class="with-gap" name="destino" id="fg"><span>Fenghuang</span>
         </label>
         <p>Escreva sua resposta:</p>
         <label for="resposta">
             <textarea name="caixaderesposta" id="resposta" cols="40" rows="10" placeholder="no max 500 caracteres" maxlength="500"></textarea>
         </label> 
+        <p>Data da viagem</p>
         <label for="data-envio"><br><br>
-            <p>Data da viagem</p>
-            <input type="date" name="data" id="data-envio">
+            <input type="date" name="data" format="ddmmyyyy"  class="datepicker" id="data-envio">
+            
         </label>
-        <ul>
-            <li><input type="checkbox" required>Termos</li>
-            <li><input type="checkbox">Receber propaganda</li>
-        </ul>
+        <p></p>
+        <label for="Yellow">
+            <input type="checkbox" required id="Yellow"><span>Termos</span>
+        </label>
+        <p></p>
+        <label for="red">    
+            <input type="checkbox" id="red"><span>Receber Propaganda</span>
+        </label>
+        <p></p>
         <button type="submit" id="enviar" value="submit">Enviar</button>
        <input type="reset" value="Limpar">
+       <label>
     </form>
 </header>
+<!-- <script src="script.js"></script> -->
+<script type="text/javascript" src="materialize-v1.0.0/materialize/js/materialize.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
